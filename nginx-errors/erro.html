@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitor de Conectividade Escolar - SMEC</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Space+Mono&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0a0e1a;
+  --surface: #111827;
+  --surface2: #1a2235;
+  --border: rgba(255,255,255,0.07);
+  --text: #e8edf5;
+  --text-muted: #6b7a99;
+  --accent: #3b82f6;
+  --accent2: #06b6d4;
+  --radius: 14px;
+  --font: 'DM Sans', sans-serif;
+  --mono: 'Space Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: radial-gradient(circle at top, #111827, #0a0e1a);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.error-container {
+  max-width: 620px;
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.02), 0 25px 60px rgba(0,0,0,0.6);
+  animation: fadeIn .6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-icon {
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.error-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.back-home:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(59,130,246,0.4);
+}
+
+.footer-info {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.footer-info strong {
+  color: var(--accent2);
+}
+
+@media (max-width: 768px) {
+  .error-container {
+    padding: 35px 25px;
+  }
+}
+</style>
+
+</head>
+<body>
+<div class="error-container">
+    <div class="error-icon">🔧</div>
+    <h1 class="error-title">Ops! Algo não funcionou</h1>
+    <p class="error-message">
+        Não foi possível completar sua solicitação.<br>
+        Por favor, tente novamente em alguns instantes.
+    </p>
+    
+    <a href="/" class="back-home">← Voltar para o início</a>
+    
+    <div class="footer-info">
+        <strong>Monitor</strong> • Conectividade Escolar
+    </div>
+</div>
+</body>
+</html>

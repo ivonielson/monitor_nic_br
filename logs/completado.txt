@@ -1,0 +1,6 @@
+Processamento completado em: 2026-04-15 14:53:16.528673
+Total INEPs: 142
+Checkpoint anterior: logs/checkpoint_backup_20260415_145316.json
+Status dos INEPs:
+  ERRO_TODAS_TENTATIVAS: 1
+  SUCESSO: 141

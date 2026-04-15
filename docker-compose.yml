@@ -1,0 +1,52 @@
+services:
+  app:
+    build: .
+    container_name: smec-monitor
+    restart: unless-stopped
+    # REMOVA a exposição direta da porta 5000
+    # ports:
+    #   - "5000:5000"  # <-- COMENTE ou remova esta linha
+    
+    # Adicione expose para comunicação interna com o Nginx
+    expose:
+      - "5000"
+    
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./dados.db:/app/dados.db
+      - ./.env:/app/.env:ro
+      - ./ineps.txt:/app/ineps.txt:ro
+    environment:
+      - TZ=America/Boa_Vista
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/data"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - app-network
+
+  # NOVO SERVIÇO: Nginx como proxy reverso
+  nginx:
+    image: nginx:alpine
+    container_name: smec-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"      # Acesso HTTP padrão
+      # - "443:443"
+      # - "8080:80"  # Alternativa: se quiser testar na porta 8080
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx-errors:/usr/share/nginx/html:ro
+      # - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - app
+    networks:
+      - app-network
+
+# Rede para comunicação entre os contêineres
+networks:
+  app-network:
+    driver: bridge

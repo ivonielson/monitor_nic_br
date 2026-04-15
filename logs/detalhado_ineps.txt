@@ -1,0 +1,32 @@
+LOG DETALHADO DE INEPs - 2026-04-15 14:43:53
+================================================================================
+
+[2026-04-15 14:44:04] INEP: 14321521 - Status: SUCESSO - Escola: Escola Escola Municipal Raio De Sol
+[2026-04-15 14:44:19] INEP: 14002205 - Status: SUCESSO - Escola: Escola Escola Municipal Valdemarina Normando Martins
+[2026-04-15 14:44:57] INEP: 14008521 - Status: SUCESSO - Escola: Escola Escola Municipal Zacarias Assuncao Ribeiro Araujo
+[2026-04-15 14:45:13] INEP: 14324776 - Status: SUCESSO - Escola: Escola Escola Municipal De Educacao Infantil Casa Mae Bela Vista
+[2026-04-15 14:45:25] INEP: 14008505 - Status: SUCESSO - Escola: Escola Escola Municipal De Educacao Infantil Casa Mae Priscila Mirian Galvao Almeida
+[2026-04-15 14:45:48] INEP: 14324750 - Status: SUCESSO - Escola: Escola Escola Municipal De Educacao Infantil Casa Mae Nova Cidade
+[2026-04-15 14:46:06] INEP: 14008394 - Status: SUCESSO - Escola: Escola Escola Municipal De Educacao Infantil Casas Mae Nova Cidade I
+[2026-04-15 14:46:22] INEP: 14008408 - Status: SUCESSO - Escola: Escola Escola Municipal De Educacao Infantil Casas Mae Nova Cidade Ii
+[2026-04-15 14:46:33] INEP: 14009595 - Status: SUCESSO - Escola: Escola Escola Municipal Nucleo De Creches Nova Cidade Alessandra Bentes Oliveira
+[2026-04-15 14:46:53] INEP: 14009587 - Status: SUCESSO - Escola: Escola Escola Municipal Nucleo De Creches Nova Cidade Lusia Costa Lopes
+[2026-04-15 14:47:16] INEP: 14008173 - Status: SUCESSO - Escola: Escola Escola Municipal De Educacao Infantil Casa Mae Mundo Encantado
+[2026-04-15 14:47:29] INEP: 14324849 - Status: SUCESSO - Escola: Escola Escola Municipal De Educacao Infantil Casa Mae Raiar Do Sol
+[2026-04-15 14:47:51] INEP: 14007398 - Status: SUCESSO - Escola: Escola Escola Municipal Do Campo Aureliano Soares Da Silva
+[2026-04-15 14:48:07] INEP: 14001241 - Status: SUCESSO - Escola: Escola Escola Municipal Do Campo Balduino Wottrich
+[2026-04-15 14:48:24] INEP: 14007380 - Status: SUCESSO - Escola: Escola Escola Municipal Jose David Feitosa Neto
+[2026-04-15 14:48:50] INEP: 14007410 - Status: SUCESSO - Escola: Escola Escola Municipal Do Campo Leila Maria Da Silveira
+[2026-04-15 14:49:10] INEP: 14007355 - Status: SUCESSO - Escola: Escola Escola Municipal Do Campo Maria De Lourdes Dias De Abreu
+[2026-04-15 14:49:37] INEP: 14325039 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Clemente Dos Santos
+[2026-04-15 14:49:57] INEP: 14006731 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Dukuzyy Sebastiao
+[2026-04-15 14:50:24] INEP: 14007401 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Francisca Gomes Da Silva
+[2026-04-15 14:50:52] INEP: 14007150 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Ignes Benedicto
+[2026-04-15 14:51:18] INEP: 14007339 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Ko Ko Ermelinda Raposo Da Silva
+[2026-04-15 14:51:32] INEP: 14320576 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Martins Pereira Da Silva
+[2026-04-15 14:51:50] INEP: 14000636 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Tuxaua Albino Morais
+[2026-04-15 14:52:13] INEP: 14007142 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Vicente Andre Da Silva
+[2026-04-15 14:52:24] INEP: 14007134 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Vovo Antonia Celestina Da Silva
+[2026-04-15 14:52:54] INEP: 14365650 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Vovo Jandico Da Silva
+[2026-04-15 14:53:04] INEP: 14007347 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Vovo Tereza Da Silva
+[2026-04-15 14:53:15] INEP: 14007428 - Status: SUCESSO - Escola: Escola Escola Municipal Indigena Vovo Terezinha Da Silva

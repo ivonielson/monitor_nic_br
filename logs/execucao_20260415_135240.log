@@ -1,0 +1,182 @@
+2026-04-15 13:52:40,054 - INFO - Total INEPs no arquivo: 142
+2026-04-15 13:52:40,055 - INFO - INEPs já processados: 0
+2026-04-15 13:52:40,055 - INFO - INEPs a processar: 142
+2026-04-15 13:52:40,055 - INFO - ============================================================
+2026-04-15 13:52:40,055 - INFO - SISTEMA DE COLETA AGENDADA
+2026-04-15 13:52:40,055 - INFO - ============================================================
+2026-04-15 13:52:40,055 - INFO - Agendamento: ATIVO
+2026-04-15 13:52:40,055 - INFO - Frequência: DIARIO
+2026-04-15 13:52:40,055 - INFO - Horário: 01:00
+2026-04-15 13:52:40,055 - INFO - ============================================================
+2026-04-15 13:52:40,055 - INFO - Modo: Execução contínua agendada
+2026-04-15 13:52:40,055 - INFO - Aguardando horário de execução...
+2026-04-15 13:52:40,055 - INFO - Agendamento diário no horário 01:00 - Executando...
+2026-04-15 13:52:40,055 - INFO - 
+============================================================
+2026-04-15 13:52:40,055 - INFO - Iniciando execução agendada em 2026-04-15 13:52:40.055727
+2026-04-15 13:52:40,055 - INFO - ============================================================
+2026-04-15 13:52:40,055 - INFO - ============================================================
+2026-04-15 13:52:40,055 - INFO - INICIANDO COLETA DE DADOS
+2026-04-15 13:52:40,056 - INFO - ============================================================
+2026-04-15 13:52:40,056 - INFO - Tabela verificada/criada com sucesso
+2026-04-15 13:52:40,056 - INFO - Total INEPs no arquivo: 142
+2026-04-15 13:52:40,056 - INFO - INEPs já processados: 0
+2026-04-15 13:52:40,056 - INFO - INEPs a processar: 142
+2026-04-15 13:52:40,056 - INFO - Fila criada com 142 INEPs
+2026-04-15 13:52:40,338 - INFO - Iniciando Playwright...
+2026-04-15 13:52:40,338 - INFO - Iniciando 1 workers com reinicialização a cada 1 consultas...
+2026-04-15 13:52:40,338 - INFO - Worker 1 criado
+2026-04-15 13:52:40,338 - INFO - Todos workers iniciados. Aguardando processamento...
+2026-04-15 13:52:40,338 - INFO - ------------------------------------------------------------
+2026-04-15 13:52:40,338 - INFO - [Worker 1] INICIANDO
+2026-04-15 13:52:40,338 - INFO - [Worker 1] Fila tem 142 INEPs para processar
+2026-04-15 13:52:40,455 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:52:40,455 - INFO - [Worker 1] Progresso: 1/142 - INEP 14008629
+2026-04-15 13:52:40,455 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14008629 =====
+2026-04-15 13:52:40,455 - INFO - [Worker 1] INEP 14008629 - Tentativa 1/4
+2026-04-15 13:53:14,948 - INFO - [Worker 1] INEP 14008629 - Aguardando carregamento dos dados...
+2026-04-15 13:53:38,361 - INFO - [Worker 1] INEP 14008629 - Validação OK. Escola: Escola Centro Municipal Integrado De Educacao Espe
+2026-04-15 13:53:38,361 - INFO - [Worker 1] INEP 14008629 - Dados validados com sucesso
+2026-04-15 13:53:40,438 - INFO - [Worker 1] INEP 14008629 - Critério MEC bruto: 
+2026-04-15 13:53:40,438 - INFO - [Worker 1] INEP 14008629 - Adequação determinada: SEM DADOS
+2026-04-15 13:53:40,438 - INFO - [Worker 1] ✓ INEP 14008629 - Escola: Escola Centro Municipal Integrado De Educacao Espe
+2026-04-15 13:53:40,444 - INFO - [DB] INEP 14008629 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:53:40,445 - INFO - [Worker 1] INEP 14008629 - Salvo no banco de dados
+2026-04-15 13:53:40,445 - INFO - [Worker 1] INEP 14008629 - FINALIZADO em 59.99s
+2026-04-15 13:53:41,446 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 13:53:41,560 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:53:41,561 - INFO - [Worker 1] Progresso: 2/142 - INEP 14009455
+2026-04-15 13:53:41,561 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14009455 =====
+2026-04-15 13:53:41,561 - INFO - [Worker 1] INEP 14009455 - Tentativa 1/4
+2026-04-15 13:53:56,816 - INFO - [Worker 1] INEP 14009455 - Aguardando carregamento dos dados...
+2026-04-15 13:54:13,616 - INFO - [Worker 1] INEP 14009455 - Validação OK. Escola: Escola Centro Especializado Em Transtorno Do Espec
+2026-04-15 13:54:13,616 - INFO - [Worker 1] INEP 14009455 - Dados validados com sucesso
+2026-04-15 13:54:15,737 - INFO - [Worker 1] INEP 14009455 - Critério MEC bruto: 
+2026-04-15 13:54:15,737 - INFO - [Worker 1] INEP 14009455 - Adequação determinada: SEM DADOS
+2026-04-15 13:54:15,737 - INFO - [Worker 1] ✓ INEP 14009455 - Escola: Escola Centro Especializado Em Transtorno Do Espec
+2026-04-15 13:54:15,741 - INFO - [DB] INEP 14009455 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:54:15,742 - INFO - [Worker 1] INEP 14009455 - Salvo no banco de dados
+2026-04-15 13:54:15,742 - INFO - [Worker 1] INEP 14009455 - FINALIZADO em 34.18s
+2026-04-15 13:54:16,743 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 13:54:16,848 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:54:16,848 - INFO - [Worker 1] Progresso: 3/142 - INEP 14321548
+2026-04-15 13:54:16,848 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14321548 =====
+2026-04-15 13:54:16,848 - INFO - [Worker 1] INEP 14321548 - Tentativa 1/4
+2026-04-15 13:54:53,521 - INFO - [Worker 1] INEP 14321548 - Aguardando carregamento dos dados...
+2026-04-15 13:55:03,004 - INFO - [Worker 1] INEP 14321548 - Validação OK. Escola: Escola Escola Municipal Crianca Feliz
+2026-04-15 13:55:03,004 - INFO - [Worker 1] INEP 14321548 - Dados validados com sucesso
+2026-04-15 13:55:05,219 - INFO - [Worker 1] INEP 14321548 - Critério MEC bruto: Parabéns! De acordo com as medições de Internet realizadas nos últimos seis meses, sua escola está com velocidade adequada aos parâmetros do Ministério da Educação.
+2026-04-15 13:55:05,219 - INFO - [Worker 1] INEP 14321548 - Adequação determinada: SIM
+2026-04-15 13:55:05,219 - INFO - [Worker 1] ✓ INEP 14321548 - Escola: Escola Escola Municipal Crianca Feliz
+2026-04-15 13:55:05,226 - INFO - [DB] INEP 14321548 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:55:05,227 - INFO - [Worker 1] INEP 14321548 - Salvo no banco de dados
+2026-04-15 13:55:05,227 - INFO - [Worker 1] INEP 14321548 - FINALIZADO em 48.38s
+2026-04-15 13:55:06,229 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 13:55:06,311 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:55:06,312 - INFO - [Worker 1] Progresso: 4/142 - INEP 14001233
+2026-04-15 13:55:06,312 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14001233 =====
+2026-04-15 13:55:06,312 - INFO - [Worker 1] INEP 14001233 - Tentativa 1/4
+2026-04-15 13:55:25,440 - INFO - [Worker 1] INEP 14001233 - Aguardando carregamento dos dados...
+2026-04-15 13:55:34,358 - INFO - [Worker 1] INEP 14001233 - Validação OK. Escola: Escola Escola Municipal Dalicio Faria Filho
+2026-04-15 13:55:34,359 - INFO - [Worker 1] INEP 14001233 - Dados validados com sucesso
+2026-04-15 13:55:36,581 - INFO - [Worker 1] INEP 14001233 - Critério MEC bruto: Parabéns! De acordo com as medições de Internet realizadas nos últimos seis meses, sua escola está com velocidade adequada aos parâmetros do Ministério da Educação.
+2026-04-15 13:55:36,581 - INFO - [Worker 1] INEP 14001233 - Adequação determinada: SIM
+2026-04-15 13:55:36,581 - INFO - [Worker 1] ✓ INEP 14001233 - Escola: Escola Escola Municipal Dalicio Faria Filho
+2026-04-15 13:55:36,600 - INFO - [DB] INEP 14001233 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:55:36,601 - INFO - [Worker 1] INEP 14001233 - Salvo no banco de dados
+2026-04-15 13:55:36,602 - INFO - [Worker 1] INEP 14001233 - FINALIZADO em 30.29s
+2026-04-15 13:55:37,603 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 13:55:37,690 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:55:37,690 - INFO - [Worker 1] Progresso: 5/142 - INEP 14009064
+2026-04-15 13:55:37,690 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14009064 =====
+2026-04-15 13:55:37,690 - INFO - [Worker 1] INEP 14009064 - Tentativa 1/4
+2026-04-15 13:55:50,256 - INFO - [Worker 1] INEP 14009064 - Aguardando carregamento dos dados...
+2026-04-15 13:55:58,706 - INFO - [Worker 1] INEP 14009064 - Validação OK. Escola: Escola Escola Municipal De Educacao Infantil Emili
+2026-04-15 13:55:58,706 - INFO - [Worker 1] INEP 14009064 - Dados validados com sucesso
+2026-04-15 13:56:00,958 - INFO - [Worker 1] INEP 14009064 - Critério MEC bruto: Poxa! De acordo com as medições de Internet realizadas nos últimos 6 meses, sua escola não está com velocidade adequada aos parâmetros do Ministério da Educação.
+2026-04-15 13:56:00,959 - INFO - [Worker 1] INEP 14009064 - Adequação determinada: NÃO
+2026-04-15 13:56:00,959 - INFO - [Worker 1] ✓ INEP 14009064 - Escola: Escola Escola Municipal De Educacao Infantil Emili
+2026-04-15 13:56:00,965 - INFO - [DB] INEP 14009064 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:56:00,968 - INFO - [Worker 1] INEP 14009064 - Salvo no banco de dados
+2026-04-15 13:56:00,970 - INFO - [Worker 1] INEP 14009064 - FINALIZADO em 23.28s
+2026-04-15 13:56:01,971 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 13:56:02,057 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:56:02,057 - INFO - [Worker 1] Progresso: 6/142 - INEP 14009072
+2026-04-15 13:56:02,057 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14009072 =====
+2026-04-15 13:56:02,057 - INFO - [Worker 1] INEP 14009072 - Tentativa 1/4
+2026-04-15 13:56:19,604 - INFO - [Worker 1] INEP 14009072 - Aguardando carregamento dos dados...
+2026-04-15 13:56:40,136 - INFO - [Worker 1] INEP 14009072 - Validação OK. Escola: Escola Escola Municipal De Educacao Infantil Eunic
+2026-04-15 13:56:40,137 - INFO - [Worker 1] INEP 14009072 - Dados validados com sucesso
+2026-04-15 13:56:42,266 - INFO - [Worker 1] INEP 14009072 - Critério MEC bruto: Poxa! De acordo com as medições de Internet realizadas nos últimos 6 meses, sua escola não está com velocidade adequada aos parâmetros do Ministério da Educação.
+2026-04-15 13:56:42,266 - INFO - [Worker 1] INEP 14009072 - Adequação determinada: NÃO
+2026-04-15 13:56:42,266 - INFO - [Worker 1] ✓ INEP 14009072 - Escola: Escola Escola Municipal De Educacao Infantil Eunic
+2026-04-15 13:56:42,286 - INFO - [DB] INEP 14009072 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:56:42,287 - INFO - [Worker 1] INEP 14009072 - Salvo no banco de dados
+2026-04-15 13:56:42,287 - INFO - [Worker 1] INEP 14009072 - FINALIZADO em 40.23s
+2026-04-15 13:56:43,289 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 13:56:43,395 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:56:43,395 - INFO - [Worker 1] Progresso: 7/142 - INEP 14009056
+2026-04-15 13:56:43,395 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14009056 =====
+2026-04-15 13:56:43,395 - INFO - [Worker 1] INEP 14009056 - Tentativa 1/4
+2026-04-15 13:57:00,668 - INFO - [Worker 1] INEP 14009056 - Aguardando carregamento dos dados...
+2026-04-15 13:57:24,170 - INFO - [Worker 1] INEP 14009056 - Validação OK. Escola: Escola Escola Municipal De Educacao Infantil Fatim
+2026-04-15 13:57:24,170 - INFO - [Worker 1] INEP 14009056 - Dados validados com sucesso
+2026-04-15 13:57:26,416 - INFO - [Worker 1] INEP 14009056 - Critério MEC bruto: Parabéns! De acordo com as medições de Internet realizadas nos últimos seis meses, sua escola está com velocidade adequada aos parâmetros do Ministério da Educação.
+2026-04-15 13:57:26,416 - INFO - [Worker 1] INEP 14009056 - Adequação determinada: SIM
+2026-04-15 13:57:26,416 - INFO - [Worker 1] ✓ INEP 14009056 - Escola: Escola Escola Municipal De Educacao Infantil Fatim
+2026-04-15 13:57:26,423 - INFO - [DB] INEP 14009056 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:57:26,424 - INFO - [Worker 1] INEP 14009056 - Salvo no banco de dados
+2026-04-15 13:57:26,424 - INFO - [Worker 1] INEP 14009056 - FINALIZADO em 43.03s
+2026-04-15 13:57:27,426 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 13:57:27,527 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:57:27,527 - INFO - [Worker 1] Progresso: 8/142 - INEP 14321483
+2026-04-15 13:57:27,527 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14321483 =====
+2026-04-15 13:57:27,527 - INFO - [Worker 1] INEP 14321483 - Tentativa 1/4
+2026-04-15 13:58:03,552 - INFO - [Worker 1] INEP 14321483 - Aguardando carregamento dos dados...
+2026-04-15 13:58:33,561 - WARNING - [Worker 1] INEP 14321483 - Timeout aguardando conteúdo: Page.wait_for_function: Timeout 20000ms exceeded.
+2026-04-15 13:58:33,580 - WARNING - [Worker 1] INEP 14321483 - Nome da escola inválido: ''
+2026-04-15 13:58:33,580 - WARNING - [Worker 1] INEP 14321483 - Validação falhou. Possível dados incorretos.
+2026-04-15 13:58:33,587 - INFO - [Worker 1] INEP 14321483 - Tentando novamente...
+2026-04-15 13:58:33,587 - INFO - [Worker 1] INEP 14321483 - Tentativa 2/4
+2026-04-15 13:58:37,715 - INFO - [Worker 1] INEP 14321483 - Aguardando carregamento dos dados...
+2026-04-15 13:58:46,149 - INFO - [Worker 1] INEP 14321483 - Validação OK. Escola: Escola Escola Municipal Francisco Cassio De Moraes
+2026-04-15 13:58:46,149 - INFO - [Worker 1] INEP 14321483 - Dados validados com sucesso
+2026-04-15 13:58:49,752 - INFO - [Worker 1] INEP 14321483 - Critério MEC bruto: Parabéns! De acordo com as medições de Internet realizadas nos últimos seis meses, sua escola está com velocidade adequada aos parâmetros do Ministério da Educação.
+2026-04-15 13:58:49,752 - INFO - [Worker 1] INEP 14321483 - Adequação determinada: SIM
+2026-04-15 13:58:49,752 - INFO - [Worker 1] ✓ INEP 14321483 - Escola: Escola Escola Municipal Francisco Cassio De Moraes
+2026-04-15 13:58:49,772 - INFO - [DB] INEP 14321483 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:58:49,774 - INFO - [Worker 1] INEP 14321483 - Salvo no banco de dados
+2026-04-15 13:58:49,775 - INFO - [Worker 1] INEP 14321483 - FINALIZADO em 82.25s
+2026-04-15 13:58:50,777 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 13:58:50,863 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:58:50,863 - INFO - [Worker 1] Progresso: 9/142 - INEP 14007290
+2026-04-15 13:58:50,863 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14007290 =====
+2026-04-15 13:58:50,863 - INFO - [Worker 1] INEP 14007290 - Tentativa 1/4
+2026-04-15 13:59:10,896 - INFO - [Worker 1] INEP 14007290 - Aguardando carregamento dos dados...
+2026-04-15 13:59:26,839 - INFO - [Worker 1] INEP 14007290 - Validação OK. Escola: Escola Escola Municipal Ana Sandra Nascimento Quei
+2026-04-15 13:59:26,839 - INFO - [Worker 1] INEP 14007290 - Dados validados com sucesso
+2026-04-15 13:59:29,073 - INFO - [Worker 1] INEP 14007290 - Critério MEC bruto: Poxa! De acordo com as medições de Internet realizadas nos últimos 6 meses, sua escola não está com velocidade adequada aos parâmetros do Ministério da Educação.
+2026-04-15 13:59:29,073 - INFO - [Worker 1] INEP 14007290 - Adequação determinada: NÃO
+2026-04-15 13:59:29,073 - INFO - [Worker 1] ✓ INEP 14007290 - Escola: Escola Escola Municipal Ana Sandra Nascimento Quei
+2026-04-15 13:59:29,076 - INFO - [DB] INEP 14007290 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:59:29,078 - INFO - [Worker 1] INEP 14007290 - Salvo no banco de dados
+2026-04-15 13:59:29,078 - INFO - [Worker 1] INEP 14007290 - FINALIZADO em 38.21s
+2026-04-15 13:59:30,080 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 13:59:30,202 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 13:59:30,202 - INFO - [Worker 1] Progresso: 10/142 - INEP 14325055
+2026-04-15 13:59:30,202 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14325055 =====
+2026-04-15 13:59:30,202 - INFO - [Worker 1] INEP 14325055 - Tentativa 1/4
+2026-04-15 13:59:43,932 - INFO - [Worker 1] INEP 14325055 - Aguardando carregamento dos dados...
+2026-04-15 13:59:57,830 - INFO - [Worker 1] INEP 14325055 - Validação OK. Escola: Escola Escola Municipal Professora Glemiria Gonzag
+2026-04-15 13:59:57,830 - INFO - [Worker 1] INEP 14325055 - Dados validados com sucesso
+2026-04-15 13:59:59,907 - INFO - [Worker 1] INEP 14325055 - Critério MEC bruto: Poxa! De acordo com as medições de Internet realizadas nos últimos 6 meses, sua escola não está com velocidade adequada aos parâmetros do Ministério da Educação.
+2026-04-15 13:59:59,907 - INFO - [Worker 1] INEP 14325055 - Adequação determinada: NÃO
+2026-04-15 13:59:59,907 - INFO - [Worker 1] ✓ INEP 14325055 - Escola: Escola Escola Municipal Professora Glemiria Gonzag
+2026-04-15 13:59:59,910 - INFO - [DB] INEP 14325055 - ATUALIZADO com sucesso (novos dados)
+2026-04-15 13:59:59,911 - INFO - [Worker 1] INEP 14325055 - Salvo no banco de dados
+2026-04-15 13:59:59,912 - INFO - [Worker 1] INEP 14325055 - FINALIZADO em 29.71s
+2026-04-15 14:00:00,913 - INFO - [Worker 1] Reiniciando navegador após 1 consultas
+2026-04-15 14:00:01,009 - INFO - [Worker 1] Novo navegador criado
+2026-04-15 14:00:01,009 - INFO - [Worker 1] Progresso: 11/142 - INEP 14008157
+2026-04-15 14:00:01,009 - INFO - [Worker 1] ===== INICIANDO CONSULTA INEP 14008157 =====
+2026-04-15 14:00:01,009 - INFO - [Worker 1] INEP 14008157 - Tentativa 1/4

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitor de Conectividade Escolar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">CARREGANDO DADOS...</div>
+</div>
+
+<header class="header">
+  <div class="header-left">
+    <div class="logo-icon">📡</div>
+    <div>
+      <div class="header-title">SMEC - ConectaEdu</div>
+      <div class="header-sub">📊 Monitoramento Educação Conectada</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="live-badge">
+      <div class="live-dot"></div>
+      TEMPO REAL
+    </div>
+    <div class="last-update" id="lastUpdate">—</div>
+  </div>
+</header>
+
+<main class="main" id="mainContent" style="opacity:0">
+  
+  <h1 class="print-title">📊 Monitoramento Educação Conectada</h1>
+
+  <div class="boot-bar" id="bootBar">
+    <div class="boot-item">
+      <span class="boot-label">Última Coleta</span>
+      <span class="boot-value" id="bootUltima">—</span>
+    </div>
+    <div class="boot-divider"></div>
+    <div class="boot-item">
+      <span class="boot-label">Próximo Agendamento</span>
+      <span class="boot-value" id="bootProximo">—</span>
+    </div>
+    <div class="boot-divider"></div>
+    <div class="boot-item">
+      <span class="boot-label">Frequência</span>
+      <span class="boot-value" id="bootFreq">—</span>
+    </div>
+    <div class="boot-divider"></div>
+    <div class="boot-item">
+      <span class="boot-label">Horário Configurado</span>
+      <span class="boot-value" id="bootHorario">—</span>
+    </div>
+    <div class="boot-divider"></div>
+    <div class="boot-item">
+      <span class="boot-label">INEPs no Checkpoint</span>
+      <span class="boot-value" id="bootCheckpoint">—</span>
+    </div>
+    <div class="boot-divider"></div>
+    <div class="boot-item">
+      <span class="boot-label">Status Bot</span>
+      <span class="boot-value" id="bootStatus">—</span>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <p class="section-title">Visão Geral</p>
+  <div class="cards-grid">
+    <div class="card card-total" onclick="scrollToTable('tableTodas')">
+      <div class="card-icon">🏫</div>
+      <div class="card-value" id="cardTotal">—</div>
+      <div class="card-label">
+        Total de Escolas
+        <span class="info-icon" data-tooltip="Número total de escolas monitoradas na rede municipal">ⓘ</span>
+        <span class="tooltip-text">Número total de escolas monitoradas na rede municipal</span>
+      </div>
+      <div class="card-progress">
+        <div class="card-progress-bar" id="progressTotal" style="width: 100%"></div>
+      </div>
+      <div class="card-sub">
+        <span>🏫 Rede municipal</span>
+      </div>
+      <div class="card-pct" id="cardTotalPct">100%</div>
+    </div>
+
+    <div class="card card-ok" onclick="filterTableByAdequada('SIM')">
+      <div class="card-icon">✅</div>
+      <div class="card-value" id="cardOk">—</div>
+      <div class="card-label">
+        Dentro do Padrão MEC
+        <span class="info-icon" data-tooltip="Escolas com velocidade de internet adequada conforme parâmetros do MEC">ⓘ</span>
+        <span class="tooltip-text">Escolas com velocidade de internet adequada conforme parâmetros do MEC (mínimo de 1 Mbps por aluno simultâneo)</span>
+      </div>
+      <div class="card-progress">
+        <div class="card-progress-bar" id="progressOk" style="width: 0%"></div>
+      </div>
+      <div class="card-sub">
+        <span class="trend-up">📈 Conforme</span>
+        <span> | Padrão MEC</span>
+      </div>
+      <div class="card-pct" id="cardOkPct"></div>
+    </div>
+
+    <div class="card card-nok" onclick="filterTableByAdequada('NÃO')">
+      <div class="card-icon">⚠️</div>
+      <div class="card-value" id="cardNok">—</div>
+      <div class="card-label">
+        Fora do Padrão MEC
+        <span class="info-icon" data-tooltip="Escolas que não atingem a velocidade mínima recomendada pelo MEC">ⓘ</span>
+        <span class="tooltip-text">Escolas que não atingem a velocidade mínima recomendada pelo MEC. Necessita de atenção e melhorias na infraestrutura.</span>
+      </div>
+      <div class="card-progress">
+        <div class="card-progress-bar" id="progressNok" style="width: 0%"></div>
+      </div>
+      <div class="card-sub">
+        <span class="trend-down">📉 Atenção necessária</span>
+        <span> | Abaixo do padrão</span>
+      </div>
+      <div class="card-pct" id="cardNokPct"></div>
+    </div>
+
+    <div class="card card-late" onclick="scrollToTable('tableAtrasadas')">
+      <div class="card-icon">⏰</div>
+      <div class="card-value" id="cardLate">—</div>
+      <div class="card-label">
+        Monitoramento Atrasado
+        <span class="info-icon" data-tooltip="Escolas sem medição recente (últimos 7 dias)">ⓘ</span>
+        <span class="tooltip-text">Escolas sem medição recente (últimos 7 dias). Recomenda-se verificar o funcionamento do medidor de conectividade.</span>
+      </div>
+      <div class="card-progress">
+        <div class="card-progress-bar" id="progressLate" style="width: 0%"></div>
+      </div>
+      <div class="card-sub">
+        <span class="trend-neutral">🕐 Pendente</span>
+        <span> | Sem medição recente</span>
+      </div>
+      <div class="card-pct" id="cardLatePct"></div>
+    </div>
+  </div>
+
+  <!-- CHARTS -->
+  <p class="section-title">Análise</p>
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-title">🎯 Distribuição por Adequação</div>
+      <div class="chart-canvas-wrap"><canvas id="chartAdequacao"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">⚡ Top 10 Escolas por Velocidade de Download (Mbps)</div>
+      <div class="chart-canvas-wrap"><canvas id="chartVelocidade"></canvas></div>
+    </div>
+  </div>
+
+  <!-- TABELA ATRASADOS -->
+  <div class="table-section">
+    <div class="table-header">
+      <p class="section-title" style="margin-bottom:0">⏰ Escolas com Monitoramento Atrasado</p>
+      <span class="table-count" id="countAtrasadas"></span>
+      <input type="text" class="table-search" id="searchAtrasadas" placeholder="🔍 Pesquisar escola..." oninput="filterTable('tableAtrasadas', this.value)">
+    </div>
+    <div class="table-wrap">
+      <table id="tableAtrasadas">
+        <thead>
+          <tr><th>INEP</th><th>Escola</th><th>Adequada</th><th>Última Medição</th><th>Dias em Atraso</th></tr>
+        </thead>
+        <tbody id="tbodyAtrasadas"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TABELA TODAS AS ESCOLAS -->
+  <div class="table-section">
+    <div class="table-header">
+      <p class="section-title" style="margin-bottom:0">🏫 Todas as Escolas</p>
+      <span class="table-count" id="countTodas"></span>
+      <input type="text" class="table-search" id="searchTodas" placeholder="🔍 Pesquisar escola..." oninput="filterTable('tableTodas', this.value)">
+    </div>
+    <div class="table-wrap">
+      <table id="tableTodas">
+        <thead>
+          <tr><th>INEP</th><th>Escola</th><th>Estudantes</th><th>Vel. Adequada</th><th>Vel. Máx (Mbps)</th><th>Nº Medições</th><th>Última Medição</th><th>Adequada</th><th>Atualizado</th></tr>
+        </thead>
+        <tbody id="tbodyTodas"></tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="last-update-print" id="lastUpdatePrint"></div>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>📡 Monitor de Conectividade Escolar</h3>
+      <p>SMEC · Dados coletados via NIC.br<br>Atualização diária</p>
+    </div>
+    <div class="footer-center">
+      <p>Desenvolvido por:<br><strong>Coordenação de Informática - SMEC</strong></p>
+      <p>Coordenador: <strong>Moisés Gomes</strong><br>Desenvolvedor: <strong>Ivonielson Freitas</strong></p>
+    </div>
+    <div class="footer-right">
+      <p>© 2026 SMEC</p>
+      <p>Educação · Tecnologia · Conectividade</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../static/js/chart-config.js"></script>
+<script src="../static/js/table-handlers.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>
